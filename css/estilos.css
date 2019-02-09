@@ -1,0 +1,175 @@
+header{
+	background-color: #5b7989;
+	width: 100%;
+	height: 80px;
+	top: 0;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	animation-name: header-animacion;
+	animation-duration: 2s;
+        }
+section {
+	display: flex;
+	flex-flow: row wrap;
+        }
+footer{
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	background-color: #C6d5c5;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	   }
+h1{
+	font-family: 'Dancing Script';
+	color: white;
+	text-align: left;
+	text-shadow: 0px 2px #02010a;
+   }
+p {
+	font-family: "Comic Sans MS", serif;
+	font-style: italic;
+	text-align: left;
+   }
+nav{
+    float: right;
+    }
+nav a{
+	color: white;
+	font-family: "Comic Sans MS", serif;
+	font-style: italic;
+	font-size: 20px;
+	text-align: left;
+	text-shadow: none;
+	  }
+.actual{
+	text-decoration: none;
+        }
+.principal{
+	background-color: #82c3a6;
+	width: 100%;
+	height: 300px;
+	padding: 15px;
+            }
+.principal img{
+	border: 2px solid white;
+	height: 90%;
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(2px 2px #02010a);
+	filter: drop-shadow(2px 2px#02010a);
+	            }
+.imagen1 {
+	width: 50%;
+	height: 300px;
+	background-color: #d5c75f;
+           }
+.imagen1 img{
+	border: 2px solid white;
+	height: 80%;
+	-webkit-filter: drop-shadow(2px 2px #02010a);
+	filter: drop-shadow(2px 2px #02010a);
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+              }
+.imagen1 img:hover{
+   transform: rotate(10deg);
+   -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transition-duration: 2s;
+                   }
+.imagen1 p{
+	font-family: "Comic Sans MS";
+	text-decoration: underline;
+	text-align: center;
+              }
+.imagen2 {
+	width: 50%;
+	height: 300px;
+	background-color: #d5c75f;
+           }
+.imagen2 img{
+	border: 2px solid white;
+	height: 80%;
+	-webkit-filter: drop-shadow(2px 2px #02010a);
+	filter: drop-shadow(2px 2px #02010a);
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+             }
+.imagen2 img:hover{
+	transform: translate(5px, -20px);
+	-webkit-transform: translate(5px, -20px);
+    -o-transform: translate(5px, -20px);
+    -moz-transform: translate(5px, -20px);
+    transition-duration: 2s;
+                   }
+.imagen2 p{
+	font-family: "Comic Sans MS";
+	text-decoration: underline;
+	text-align: center;
+              }
+.pie{
+	display: flex;
+	flex-flow: row wrap;
+     }
+.pie h1{
+        text-shadow: none;
+        }
+div[class*="de"]{
+	width: 25%;
+                }
+div[class*="de"] h1{
+	font-family: 'Dancing Script';
+	color: black;
+	text-align: left;
+	font-size: 30px;
+                    }
+.deredes img{
+	height: 15px;
+             }
+/*animación*/
+@keyframes header-animacion{
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+@media all and (max-width: 420px) {
+	.principal{
+		width: 100%;
+		order: 1;
+	}
+	.principal img{
+    height: 60%;
+	}
+	.imagen1{
+		width: 100%;
+		order: 2;
+	}
+	.imagen1 img{
+		height: 60%;	
+	}
+    .imagen2{
+		width: 100%;
+		order: 3;
+	}
+	.imagen2 img{
+		height: 60%;
+    }
+    .pie{
+		width: 100%;
+		order: 4;
+	}
+	div[class*="de"] {
+    width: 100%;
+    }
+}
