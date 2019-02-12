@@ -123,6 +123,10 @@ div[class*="de"] h1{
 }
 /*AJUSTE A 420px*/
 @media all and (max-width: 420px) {
+div > img { 
+	    max-width: 330px;
+	    height: auto;
+	}
 .principal1 {
 flex-flow: column;
 height: auto;
@@ -131,22 +135,13 @@ height: auto;
 		width: 100%;
 		order: 1;
 	}
-.imagen1 img{
-		height: 40%;	
-	}
 .imagen2{
 		width: 100%;
 		order: 2;
 	}
-.imagen2 img{
-		height: 40%;	
-	}
 .imagen3{
 		width: 100%;
 		order: 3;
-	}
-.imagen3 img{
-		height: 40%;	
 	}
 .principal2{
 flex-flow: column;
@@ -156,22 +151,13 @@ height: auto;
 		width: 100%;
 		order: 4;
 	}
-.imagen4 img{
-		height: 40%;	
-	}
 .imagen5{
 		width: 100%;
 		order: 5;
 	}
-.imagen5 img{
-		height: 40%;	
-	}
 .imagen6{
 		width: 100%;
 		order: 6;
-	}
-.imagen6 img{
-		height: 40%;	
 	}
 .pie{
 	width: 100%;
